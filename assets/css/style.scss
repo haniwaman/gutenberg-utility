@@ -1,0 +1,338 @@
+// ブレークポイント
+$breakpoints: (
+	"sp": "(max-width: 63em)",
+	"pc": "(min-width: 64em)",
+);
+
+@mixin mq($breakpoint: sp) {
+
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+$start: 0;
+$end: 300;
+
+$start-width: 0;
+$end-width: 1200;
+
+@for $i from $start through $end {
+    .gu-mt#{$i} {
+        margin-top:#{$i}px !important;
+    }
+
+    .gu-mr#{$i} {
+        margin-right:#{$i}px !important;
+    }
+
+    .gu-mb#{$i} {
+        margin-bottom:#{$i}px !important;
+    }
+
+    .gu-ml#{$i} {
+        margin-left:#{$i}px !important;
+    }
+
+    .gu-mx#{$i} {
+        margin-left:#{$i}px !important;
+        margin-right:#{$i}px !important;
+    }
+
+    .gu-my#{$i} {
+        margin-top:#{$i}px !important;
+        margin-bottom:#{$i}px !important;
+    }
+}
+
+@for $i from $start through $end {
+    .gu-pt#{$i} {
+        padding-top:#{$i}px !important;
+    }
+
+    .gu-pr#{$i} {
+        padding-right:#{$i}px !important;
+    }
+
+    .gu-pb#{$i} {
+        padding-bottom:#{$i}px !important;
+    }
+
+    .gu-pl#{$i} {
+        padding-left:#{$i}px !important;
+    }
+
+    .gu-px#{$i} {
+        padding-left:#{$i}px !important;
+        padding-right:#{$i}px !important;
+    }
+
+    .gu-py#{$i} {
+        padding-top:#{$i}px !important;
+        padding-bottom:#{$i}px !important;
+    }
+}
+
+.gu-mt-auto {
+    margin-top:auto !important;
+}
+
+.gu-mr-auto {
+    margin-right:auto !important;
+}
+
+.gu-mb-auto {
+    margin-bottom:auto !important;
+}
+
+.gu-ml-auto {
+    margin-left:auto !important;
+}
+
+.gu-mx-auto {
+    margin-left:auto !important;
+    margin-right:auto !important;
+}
+
+.gu-my-auto {
+    margin-top:auto !important;
+    margin-bottom:auto !important;
+}
+
+@include mq('sp') {
+    @for $i from $start through $end {
+        .gu-mt#{$i}-sp {
+            margin-top:#{$i}px !important;
+        }
+
+        .gu-mr#{$i}-sp {
+            margin-right:#{$i}px !important;
+        }
+
+        .gu-mb#{$i}-sp {
+            margin-bottom:#{$i}px !important;
+        }
+
+        .gu-ml#{$i}-sp {
+            margin-left:#{$i}px !important;
+        }
+
+        .gu-mx#{$i}-sp {
+            margin-left:#{$i}px !important;
+            margin-right:#{$i}px !important;
+        }
+
+        .gu-my#{$i}-sp {
+            margin-top:#{$i}px !important;
+            margin-bottom:#{$i}px !important;
+        }
+    }
+
+    @for $i from $start through $end {
+        .gu-pt#{$i}-sp {
+            padding-top:#{$i}px !important;
+        }
+
+        .gu-pr#{$i}-sp {
+            padding-right:#{$i}px !important;
+        }
+
+        .gu-pb#{$i}-sp {
+            padding-bottom:#{$i}px !important;
+        }
+
+        .gu-pl#{$i}-sp {
+            padding-left:#{$i}px !important;
+        }
+
+        .gu-px#{$i}-sp {
+            padding-left:#{$i}px !important;
+            padding-right:#{$i}px !important;
+        }
+
+        .gu-py#{$i}-sp {
+            padding-top:#{$i}px !important;
+            padding-bottom:#{$i}px !important;
+        }
+    }
+
+    .gu-mt-auto-sp {
+        margin-top:auto !important;
+    }
+
+    .gu-mr-auto-sp {
+        margin-right:auto !important;
+    }
+
+    .gu-mb-auto-sp {
+        margin-bottom:auto !important;
+    }
+
+    .gu-ml-auto-sp {
+        margin-left:auto !important;
+    }
+
+    .gu-mx-auto-sp {
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+
+    .gu-my-auto-sp {
+        margin-top:auto !important;
+        margin-bottom:auto !important;
+    }
+}
+
+@include mq('sp') {
+    @for $i from $start through $end {
+        .gu-mt#{$i}-sp {
+            margin-top:#{$i}px !important;
+        }
+
+        .gu-mr#{$i}-sp {
+            margin-right:#{$i}px !important;
+        }
+
+        .gu-mb#{$i}-sp {
+            margin-bottom:#{$i}px !important;
+        }
+
+        .gu-ml#{$i}-sp {
+            margin-left:#{$i}px !important;
+        }
+
+        .gu-mx#{$i}-sp {
+            margin-left:#{$i}px !important;
+            margin-right:#{$i}px !important;
+        }
+
+        .gu-my#{$i}-sp {
+            margin-top:#{$i}px !important;
+            margin-bottom:#{$i}px !important;
+        }
+    }
+
+    @for $i from $start through $end {
+        .gu-pt#{$i}-sp {
+            padding-top:#{$i}px !important;
+        }
+
+        .gu-pr#{$i}-sp {
+            padding-right:#{$i}px !important;
+        }
+
+        .gu-pb#{$i}-sp {
+            padding-bottom:#{$i}px !important;
+        }
+
+        .gu-pl#{$i}-sp {
+            padding-left:#{$i}px !important;
+        }
+
+        .gu-px#{$i}-sp {
+            padding-left:#{$i}px !important;
+            padding-right:#{$i}px !important;
+        }
+
+        .gu-py#{$i}-sp {
+            padding-top:#{$i}px !important;
+            padding-bottom:#{$i}px !important;
+        }
+    }
+}
+
+@for $i from $start-width through $end-width {
+    .gu-w#{$i} {
+        width:#{$i}px !important;
+        max-width:100% !important;
+        height:auto !important;
+    }
+}
+
+.gu-w-auto {
+    width:auto !important;
+}
+
+.gu-w-100p {
+    width:100% !important;
+}
+
+.gu-w-full {
+    width:100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+}
+
+@include mq('sp') {
+    @for $i from $start-width through $end-width {
+        .gu-w#{$i}-sp {
+            width:#{$i}px !important;
+            max-width:100% !important;
+            height:auto !important;
+        }
+    }
+
+    .gu-w-auto-sp {
+        width:auto !important;
+    }
+
+    .gu-w-100p-sp {
+        width:100% !important;
+    }
+
+    .gu-w-full-sp {
+        width:100vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+    }
+}
+
+
+.gu-nowrap {
+    flex-wrap:nowrap !important;
+}
+
+@include mq('sp') {
+
+    .gu-nowrap .wp-block-column:not(:first-child) {
+        margin-left:6px !important;
+        margin-top: 0 !important;
+    }
+}
+
+.gu-text-right {
+    text-align: right !important;
+}
+
+.gu-text-center {
+    text-align: center !important;
+}
+
+
+.gu-text-left {
+    text-align: left !important;
+}
+
+.gu-text-just {
+    text-align: justify !important;
+    text-justify: inter-ideograph !important;
+}
+
+@include mq('sp') {
+    .gu-text-right {
+        text-align: right !important;
+    }
+
+    .gu-text-center {
+        text-align: center !important;
+    }
+
+    .gu-text-left {
+        text-align: left !important;
+    }
+
+    .gu-text-just {
+        text-align: justify !important;
+        text-justify: inter-ideograph !important;
+    }
+}
