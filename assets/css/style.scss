@@ -336,3 +336,20 @@ $end-width: 1200;
         text-justify: inter-ideograph !important;
     }
 }
+
+$start-font: 8;
+$end-font: 120;
+
+@for $i from $start-font through $end-font {
+    .gu-fz#{$i} {
+        font-size:#{$i}px !important;
+    }
+}
+
+@include mq('sp') {
+    @for $i from $start-font through $end-font {
+        .gu-fz#{$i}-sp {
+            font-size:#{$i}px !important;
+        }
+    }
+}
